@@ -7,11 +7,13 @@
 
 body{
     height: 100vh;
+    width: 100vw;
     box-sizing: border-box;
     background-color: #403C3C;
     color: aliceblue;
     
 }
+/* main */
 main{
     display: flex;
     align-items: center;
@@ -23,39 +25,53 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px;
-    
-}
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+}        
+/* botoes */
 .botoes{
     display: flex;
+     flex-direction: column;
+    align-items: center;
     justify-content:center;
-    gap: 10px;
-    margin: 25px 0px;
+    margin: 10px;
+    padding: 10px;
+    
+    
 }
-img{
-    width: 250px;
-    margin: 15px;
-    border-radius: 45px;
-    border: 10px double rgb(10, 195, 195) ;
+.h2-botoes{
+    font-family: "Days One", sans-serif;
+    text-align: center;
+    font-size: 1em;
+    
 }
 a{
-    background-color: rgb(16, 112, 112);
-    width: 150px;
-    padding: 10px 0px;
-    text-align: center;
-    color: aliceblue;
-    text-decoration: none;
-    border-radius: 2px 8px;
-    margin: 15px 10px;
-    color: black;
-    font-family: "Days One", sans-serif;
-    font-size: 1em;
-}
+    
+   /* texto */
+   font-family: "Days One", sans-serif;
+   font-size: 1em;
+   text-align: center;
+   text-decoration: none;
+   color: aliceblue;
+   /* design */
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   background-color: rgb(16, 112, 112);
+   border-radius: 2px 8px;
+   width: 300px;
+   padding: 5px;
+   margin: 5px;
+   
+   }
 a:hover{
     background-color: rgb(20, 190, 190);
     border-radius: 8px 2px;
     transition: 0.8s;
     box-shadow: 5px 2px white;
+}
+.img-a{
+    max-width:20px;
+    filter: invert(100%);
 }
 h1{
     font-family: "Krona One", sans-serif;
@@ -68,4 +84,11 @@ h1{
 }
 p{
     font-family: "Days One", sans-serif;
+}
+.foto-antonio{
+    width: 250px;
+    margin: 15px;
+    border-radius: 45px;
+    border: 10px double rgb(10, 195, 195) ;
+    
 }
