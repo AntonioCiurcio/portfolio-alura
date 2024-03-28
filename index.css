@@ -13,7 +13,7 @@ body{
     flex-direction: column ;
     height: 100vh;
     box-sizing: border-box;
-    background-color: #403C3C;
+    background-color: #291c12;
     color: aliceblue;
     
 }
@@ -45,17 +45,26 @@ nav{
 /* main */
 main{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 10% 15%;
+    margin: 3% 15%;
 
 }
 .apresentacao{
     display: flex;
-    flex-direction: column;
+    
     justify-content: space-between;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-}        
+}
+.texto_about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+  
 /* botoes */
 .botoes{
     display: flex;
@@ -101,7 +110,8 @@ a:hover{
     max-width:20px;
     filter: invert(100%);
 }
-h1{
+h1, h2, h3{
+    margin: 15px;
     text-align: center;
     font-family: "Krona One", sans-serif;
 }
@@ -109,6 +119,7 @@ h1{
     
     font-family: "Meow Script", cursive;
     font-size: 2em;
+    line-height: 25px;
     color: rgb(10, 195, 195) ;
     text-align: center;
     
@@ -120,13 +131,39 @@ p{
     font-size: 1em;
     font-family: "Days One", sans-serif;
     text-align: center;
+    
 }
 .foto-antonio{
-    width: 250px;
+    max-width: 350px;
     margin: 15px;
     border-radius: 45px;
     border: 10px double rgb(10, 195, 195) ;
     
+}
+/*about_certificados*/
+.certificados{
+    margin-top: 25px;
+}
+.certificados_alura{
+    display: flex;
+    margin: 10px;
+
+}
+.certificados_link{
+    width:300px;
+    margin: 15px;
+}
+.certificados_img{
+    width: 300px;
+}
+/*projetos*/
+.projetos_autorais{
+    display: flex
+}
+.iframe_projetos{
+    margin: 0px 15px;
+    width: 200px;
+    height: 100px;
 }
 /*footer*/
 .footer{
