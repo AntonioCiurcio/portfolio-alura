@@ -7,13 +7,17 @@ html{
     margin: 0px;
     padding: 0px;
 }
+:root{
+    --cor_de_fundo: #291c12;
+    --cor_de_destaque: rgb(10, 195, 195);
+}
 
 body{
     display: flex;
     flex-direction: column ;
     height: 100vh;
     box-sizing: border-box;
-    background-color: #291c12;
+    background-color:var(--cor_de_fundo);
     color: aliceblue;
     
 }
@@ -120,7 +124,7 @@ h1, h2, h3{
     font-family: "Meow Script", cursive;
     font-size: 2em;
     line-height: 25px;
-    color: rgb(10, 195, 195) ;
+    color: var(--cor_de_destaque);
     text-align: center;
     
 }
