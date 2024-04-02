@@ -26,9 +26,9 @@ header{
     color: black;
     background-color: rgb(0, 0, 0) ;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 5px;
-    height: 5vh;
+    height: fit-content;
     
 }
 nav{
@@ -57,9 +57,19 @@ main{
 }
 .apresentacao{
     display: flex;
-    
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+}
+.apresentacao_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
 }
 .texto_about{
     display: flex;
@@ -72,24 +82,24 @@ main{
 /* botoes */
 .botoes{
     display: flex;
-     flex-direction: column;
+    flex-direction: column;
     align-items: center;
     justify-content:center;
-    margin: 10px;
     padding: 10px;
+    width: 50%;
     
     
 }
 .h2-botoes{
     font-family: "Days One", sans-serif;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     
 }
 a{
    /* texto */
    font-family: "Days One", sans-serif;
-   font-size: 1em;
+   font-size: 1rem;
    text-align: center;
    text-decoration: none;
    color: aliceblue;
@@ -99,7 +109,7 @@ a{
    gap: 15px;
    background-color: rgb(16, 112, 112);
    border-radius: 2px 8px;
-   width: 300px;
+   width: 100%;
    padding: 5px;
    margin: 5px;
    
@@ -122,7 +132,7 @@ h1, h2, h3{
 .destaque{
     
     font-family: "Meow Script", cursive;
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 25px;
     color: var(--cor_de_destaque);
     text-align: center;
@@ -132,14 +142,17 @@ p{
     text-indent: 15px;
     margin: 10px;
     line-height: 1.1em;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: "Days One", sans-serif;
     text-align: center;
     
 }
+.div_foto-antonio{
+    width: 40%;
+}
 .foto-antonio{
-    max-width: 350px;
-    margin: 15px;
+    width: 100%;
+    margin: 5px;
     border-radius: 45px;
     border: 10px double rgb(10, 195, 195) ;
     
@@ -175,7 +188,23 @@ p{
     color: rgb(214, 244, 251);
     background-color: rgb(0, 0, 0) ;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 15px;
     
+}
+@media(max-width: 1200px)
+{
+    .header{
+        
+        width: max-content;
+        align-items: center;
+    }
+    nav{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 }
