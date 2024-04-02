@@ -16,6 +16,7 @@ body{
     display: flex;
     flex-direction: column ;
     height: 100vh;
+    width: 100vw;
     box-sizing: border-box;
     background-color:var(--cor_de_fundo);
     color: aliceblue;
@@ -182,6 +183,13 @@ p{
     width: 200px;
     height: 100px;
 }
+#destaque_em_construção{
+    font-family: "Meow Script", cursive;
+    font-size: 4rem;
+    line-height: 25px;
+    color: var(--cor_de_destaque);
+    text-align: center;
+}
 /*footer*/
 .footer{
     margin-top: auto;
@@ -202,7 +210,15 @@ p{
     nav{
         justify-content: center;
     }
+    main{
+        margin: 3% 2%;
+    }
     .apresentacao{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .certificados_alura{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
