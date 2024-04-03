@@ -34,8 +34,9 @@ header{
 }
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0px 200px;
+    gap: 100px;
    
 }
 .aheader{
@@ -63,6 +64,7 @@ main{
     width: 100%;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    align-items: center;
 }
 .apresentacao_txt{
     display: flex;
@@ -70,7 +72,7 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 60%;
+    width: 100%;
 }
 .texto_about{
     display: flex;
@@ -149,10 +151,11 @@ p{
     
 }
 .div_foto-antonio{
-    width: 40%;
+    justify-content: center;
+    width: 80%;
 }
 .foto-antonio{
-    width: 100%;
+    width: 80%;
     margin: 5px;
     border-radius: 45px;
     border: 10px double rgb(10, 195, 195) ;
@@ -176,12 +179,18 @@ p{
 }
 /*projetos*/
 .projetos_autorais{
-    display: flex
+    display: flex;
+    flex-direction: column;
+    
+    
+
+
 }
 .iframe_projetos{
-    margin: 0px 15px;
-    width: 200px;
-    height: 100px;
+    margin: 10px 50%;
+    transform: translate(-50%);
+    width: 700px;
+    height: 350px;
 }
 #destaque_em_construção{
     font-family: "Meow Script", cursive;
@@ -211,16 +220,20 @@ p{
         justify-content: center;
     }
     main{
-        margin: 3% 2%;
+        margin: 2% 5%;
     }
     .apresentacao{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        padding: 1% 2%;
     }
     .certificados_alura{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+    .apresentacao_txt{
+        width: auto;
     }
 }
