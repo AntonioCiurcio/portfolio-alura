@@ -164,12 +164,11 @@ p{
 /*about_certificados*/
 .certificados{
     margin-top: 25px;
+    width: 1000px ;
 }
 .certificados_alura{
     display: flex;
-    
     margin: 10px;
-
 }
 .certificados_link{
     width:300px;
@@ -177,6 +176,10 @@ p{
 }
 .certificados_img{
     width: 300px;
+}
+.iframe_certificados{
+    width: 300px;
+    height: 300px;
 }
 /*projetos*/
 .projetos_autorais{
@@ -193,6 +196,7 @@ p{
     width: 700px;
     height: 350px;
 }
+
 #destaque_em_construção{
     font-family: "Meow Script", cursive;
     font-size: 4rem;
